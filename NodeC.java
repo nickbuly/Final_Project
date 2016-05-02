@@ -51,7 +51,7 @@ public class NodeC implements java.io.Serializable// Creates a node class
 
 	public int getKey()
 	{
-		//key = ssn % 10000; // Use modulo to get the last four digits of the ssn
+		key = ssn % 10000; // Use modulo to get the last four digits of the ssn
 		return key; // 10,000 gets the last four digits 
 	}
 	public void setKey(int key)
