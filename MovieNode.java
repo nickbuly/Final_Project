@@ -1,11 +1,13 @@
-//MovieNode
+//MovieMovieNode
 
 public class MovieNode implements java.io.Serializable{
-	private int ssn;
+	private int id;
+	private int score;
+	private int date;
 	private String title;
-	private Node next;
-	private Node right;
-	private Node left;
+	private MovieNode next;
+	private MovieNode right;
+	private MovieNode left;
 	
 	public MovieNode (int id, int score, String title, int date){
 		this.id = id;
@@ -13,40 +15,44 @@ public class MovieNode implements java.io.Serializable{
 		this.title = title;
 		this.date = date;
 	}
-//getID method for node
+//getID method for MovieNode
 	public int getID(){
 		return id;
 	}
-//getScore method for node
+//getScore method for MovieNode
 	public int getScore(){
 		return score;
 	}
 //getTitle method for int
-	public int getTitle(){
+	public String getTitle(){
 		return title;
 	}
-//setNext method for node
-	public void setNext(Node newNext){
+//getDate method for MovieNode
+	public int getDate(){
+		return date;
+	}
+//setNext method for MovieNode
+	public void setNext(MovieNode newNext){
 		next = newNext;
 	}
-//getNext method for node
-	public Node getNext(){
+//getNext method for MovieNode
+	public MovieNode getNext(){
 		return next;
 	}
-//setLeft method for node
-	public void setRight(Node newRight){
+//setLeft method for MovieNode
+	public void setRight(MovieNode newRight){
 		right = newRight;
 	}
-//setRight method for node
-	public void setLeft(Node newLeft){
+//setRight method for MovieNode
+	public void setLeft(MovieNode newLeft){
 		left = newLeft;
 	}
-//getLeft method for node
-	public Node getLeft(){
+//getLeft method for MovieNode
+	public MovieNode getLeft(){
 		return left;
 	}
-//getRight method for node
-	public Node getRight(){
+//getRight method for MovieNode
+	public MovieNode getRight(){
 		return right;
 	}
 }
